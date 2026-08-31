@@ -8,3 +8,6 @@ RUN apt-get update -qq && \
     rm -rf /var/lib/apt/lists /var/cache/apt/archives
 
 RUN gem install pry -v "0.15.2"
+RUN gem install bundler
+RUN bundle install
+
