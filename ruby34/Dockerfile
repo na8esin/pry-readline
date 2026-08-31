@@ -9,5 +9,5 @@ RUN apt-get update -qq && \
 
 RUN gem install pry -v "0.15.2"
 RUN gem install bundler
-RUN bundle install
-
+COPY Gemfile /usr/src/Gemfile
+RUN cd /usr/src && bundle install

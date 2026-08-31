@@ -18,3 +18,13 @@ services:
     tty: true
     stdin_open: true
     command: pry
+
+  ruby40-pry16:
+    build:
+      context: ./ruby40-pry16
+    volumes:
+      - ./ruby40-pry16:/usr/src
+    working_dir: /usr/src
+    tty: true
+    stdin_open: true
+    command: pry
