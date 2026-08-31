@@ -1,0 +1,20 @@
+services:
+  ruby34:
+    build:
+      context: ./ruby34
+    volumes:
+      - ./ruby34:/usr/src
+    working_dir: /usr/src
+    tty: true
+    stdin_open: true
+    command: pry
+
+  ruby40:
+    build:
+      context: ./ruby40
+    volumes:
+      - ./ruby40:/usr/src
+    working_dir: /usr/src
+    tty: true
+    stdin_open: true
+    command: pry
